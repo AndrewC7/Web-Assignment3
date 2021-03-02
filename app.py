@@ -136,9 +136,7 @@ def image_filter():
 
     if request.method == 'POST':
         
-        # TODO: Get the user's chosen filter type (whichever one they chose in the form) and save
-        # as a variable
-        # HINT: remember that we're working with a POST route here so which requests function would you use?
+        
         filter_type = request.form.get('filter_type')
         
         # Get the image file submitted by the user
@@ -179,8 +177,7 @@ pp = PrettyPrinter(indent=4)
 def gif_search():
     """Show a form to search for GIFs and show resulting GIFs from Tenor API."""
     if request.method == 'POST':
-        # TODO: Get the search query & number of GIFs requested by the user, store each as a 
-        # variable
+        
         search_query = request.form.get('search_query')
         gif_count = request.form.get('quantity')
 
